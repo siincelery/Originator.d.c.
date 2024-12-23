@@ -1,0 +1,94 @@
+﻿@page
+@model Origi.Pages.Index4Model
+@{
+    ViewData["Title"] = "Таблица Клиенты-Услуги";
+}
+
+<html>
+<body style="background-color: #FAEEDE; display: flex;flex-wrap: wrap;justify-content: space-between;">
+  
+    <table width="100%" style="margin-top: 50px;">
+        <tr>
+            <td align="left" width="50%"> <a asp-page="Index"><img src="~/images/Arrow-Left-Circle.png" style="margin-top: 50px;" /></a></td>
+        </tr>
+    </table>
+
+    <form method="post">
+        <input name="id" value="@Model.Services?.Id_Service" type="hidden" />
+        <div class="form-group">
+            <label asp-for="Services.Name_Service">Название услуги</label><br />
+            <input asp-for="Services.Name_Service" class="form-control" />
+            <span asp-validation-for="Services.Name_Service" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Services.Description">Описание</label><br />
+            <input asp-for="Services.Description" class="form-control" />
+            <span asp-validation-for="Services.Description" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Services.Price">Цена</label><br />
+            <input asp-for="Services.Price" class="form-control" />
+            <span asp-validation-for="Services.Price" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Services.Emloyee">Ответственный</label><br />
+            <input asp-for="Services.Emloyee" class="form-control" />
+            <span asp-validation-for="Services.Emloyee" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Сохранить</button>
+    </form>
+    <h2>Таблица Услуги</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Описание</th>
+                <th>Цена</th>
+                <th>Ответственный</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var service in Model.AllServices)
+            {
+                <tr>
+                    <td>@service.Name_Service</td>
+                    <td>@service.Description</td>
+                    <td>@service.Price</td>
+                    <td>@service.Emloyee</td>
+                    <td>
+                        <form method="post" asp-page-handler="Delete">
+                            <input type="hidden" name="id" value="@service.Id_Service" />
+                            <button type="submit" class="btn btn-danger">Удалить</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+<h2>Таблица Клиенты</h2>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Имя клиента</th>
+            <th>Телефон</th>
+            <th>URL</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var row in Model.Clients)
+        {
+            <tr>
+                <td>@row.Name_client</td>
+                <td>@row.Phone_cleint</td>
+                <td>@row.Url_client</td>
+                
+            </tr>
+        }
+    </tbody>
+</table>
+</body>
+</html>

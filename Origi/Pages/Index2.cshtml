@@ -1,0 +1,57 @@
+﻿@page
+@model Origi.Pages.Index2Model
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Originator
+    </title>
+</head>
+<body style="background-color: #FAEEDE; display: flex;flex-wrap: wrap;justify-content: space-between;">
+    <table width="100%" id="tabl">
+        <tr>
+            <td><p style="font-family: 'Cormorant Garamond'; font-size: 25px; margin-top: 20px;"><a href="#Cop" style="text-decoration: none; color: #252627 ">Копирайтинг</a></p></td>
+            <td><p id="header"><a asp-page="Index" style="text-decoration: none; color: #252627 ">Дизайн</a> </p></td>
+            <td><p id="header"><a asp-page="Index" style="text-decoration: none; color: #252627 ">О нас</a> </p></td>
+            <td><p id="header"><a asp-page="Index" style="text-decoration: none; color: #252627 ">Главная</a> </p></td>
+          
+            
+        </tr>
+    </table>
+    <table width="100%" style="margin-top: 50px;">
+        <tr>
+            <td align="left" width="50%"> <a asp-page="Index"><img src="~/images/Arrow-Left-Circle.png" style="margin-top: 50px;" /></a></td>
+          
+        </tr>
+    </table>
+   
+    <div style="margin-bottom: 100px;">
+        <ul class="product-list">
+            @foreach (var service in Model.Services)
+            {
+                <li class="product-card">
+                    <div class="product-card__header">
+                        <h2 class="product-card__name">@service.Name_Service</h2>
+                        <span class="product-card__price">@service.Price ₽</span>
+                    </div>
+                    <p class="product-card__description">@service.Description</p>
+                    <a asp-page="Index5" asp-route-serviceId="@service.Id_Service">  <button class="product-card__button">Заказать</button></a>
+                </li>
+            }
+        </ul>
+       
+                
+            </div>
+        
+        </div> 
+    </div>
+
+   
+
+
+
+</body>
+</html>

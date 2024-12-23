@@ -1,0 +1,64 @@
+﻿@page
+@model Origi.Pages.Index5Model
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Originator
+    </title>
+</head>
+<body style="background-color: #FAEEDE; display: flex;flex-wrap: wrap;justify-content: space-between;">
+    <table width="100%" id="head">
+        <tr>
+            <td><p style="font-family: 'Cormorant Garamond'; font-size: 25px; margin-top: 20px;"><a href="#Cop" style="text-decoration: none; color: #252627 ">Копирайтинг</a></p></td>
+            <td><p id="header"><a asp-page="Index" style="text-decoration: none; color: #252627 ">Дизайн</a> </p></td>
+            <td><p id="header"><a asp-page="Index" style="text-decoration: none; color: #252627 ">О нас</a> </p></td>
+            <td><p id="header"><a asp-page="Index" style="text-decoration: none; color: #252627 ">Главная</a> </p></td>
+            
+
+        </tr>
+    </table>
+    <table width="100%" style="margin-top: 20px; margin-bottom:50px;">
+        <tr>
+            <td align="left" width="50%"> <a asp-page="Index2"><img src="~/images/Arrow-Left-Circle.png" style="margin-top: 50px;" /></a></td>
+            
+        </tr>
+    </table>
+    <div>
+        <h2>Заказ:</h2>
+       
+        @if (Model.SelectedService != null)
+        {
+            <p id="opis">@Model.SelectedService.Name_Service</p>
+            <p id="opis">@Model.SelectedService.Description</p>
+            <p id="opis">@Model.SelectedService.Price ₽</p>
+        }
+        else
+        {
+            <p id="opis">Выберите услугу из списка.</p>
+        }
+      
+    </div>
+    <div>
+            <div>
+                <form method="post">
+                    <div asp-validation-summary="All"></div>
+
+                <label for="name" id="opis">Ваше имя:</label>
+                    <input type="text" id="name" asp-for="@Model.Client.Name_client" required /><br>
+
+                <label for="phone" id="opis">Номер телефона:</label>
+                <input type="tel" id="phone" asp-for="@Model.Client.Phone_cleint" required /><br>
+
+                <label for="url" id="opis">Ссылка на телеграм:</label>
+                <input type="text" id="url" asp-for="@Model.Client.Url_client" /><br>
+
+                <input type="submit" value="Отправить" id="button3" style="font-family: Cormorant Garamond; font-size: 30px;" />
+                </form>
+            </div>
+    </div>
+
+</body>
+</html>

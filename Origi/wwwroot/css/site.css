@@ -1,0 +1,841 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #FAEEDE;
+}
+#tablet {
+    margin-left: 100px;
+}
+
+
+#container {
+    height: 890px;
+    width: 1400px;
+    position: relative;
+    display: inline-block;
+}
+
+#image {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#text {
+    z-index: 100;
+    position: absolute;
+    color: #252627;
+    font-family: Playfair Display;
+    font-size: 400px;
+    font-weight: 900;
+    left: 10px;
+    top: 0px;
+}
+
+#textt {
+    z-index: 0;
+    position: absolute;
+    color: #252627;
+    font-family: Playfair Display;
+    font-size: 400px;
+    font-style: italic;
+    left: 350px;
+    top: 290px;
+}
+
+#header {
+    font-family: 'Cormorant Garamond';
+    font-size: 25px;
+    margin-left: 115px;
+    margin-top: 20px;
+}
+
+#we {
+    font-family: Cormorant Garamond;
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+.custom-font {
+    font-family: Playfair Display;
+    font-size: 43px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#hi {
+    font-family: Cormorant Garamond;
+    font-size: 60px;
+    font-weight: light;
+    margin-top: 50px
+}
+#paint {
+    z-index: 100;
+    position: absolute;
+    color: #252627;
+    font-family: Playfair Display;
+    font-size: 200px;
+    font-weight: 900;
+    left: 800px;
+    top: 1100px;
+}
+
+#ii {
+    z-index: 100;
+    position: absolute;
+    color: #252627;
+    font-family: Playfair Display;
+    font-size: 50px;
+    font-weight: 600;
+    left: 800px;
+    top: 1310px;
+}
+#writer {
+    z-index: 100;
+    position: absolute;
+    color: #252627;
+    font-family: Playfair Display;
+    font-style: italic;
+    font-size: 200px;
+    font-weight: 400;
+    left: 200px;
+    top: 1260px;
+}
+#reason {
+    font-family: Cormorant Garamond;
+    font-size: 80px;
+    margin-top: 450px;
+    margin-bottom: 40px;
+}
+#imgg {
+    margin-top: 30px;
+}
+#plus {
+    font-family: Cormorant Garamond;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    
+}
+#writer2 {
+    /*z-index: 100;
+    position: absolute;*/
+    text-align: right;
+    color: #252627;
+    font-family: Playfair Display;
+    font-style: italic;
+    font-size: 200px;
+    font-weight: 400;
+    margin-top: 40px;
+    /*left: 500px;
+    top: 2660px;*/
+}
+#kristinaa {
+    margin-top: 40px;
+}
+#kristinaa2 {
+    font-family: Cormorant Garamond;
+    font-size: 30px;
+    font-weight: regular;
+}
+
+#tab {
+    width: 100%;
+}
+#prim {
+    margin-top: 150px;
+    width:600px;
+    height: 600px;
+}
+#opis {
+    font-family: Cormorant Garamond; 
+    font-size: 30px;
+}
+#button3 {
+    background-color: #252627;
+    color: #FAEEDE;
+    border: 1px solid #252627;
+    padding: 2px;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    width: 200px;
+}
+#container2{
+    display: flex;
+    flex-direction: row;
+}
+.left, .right{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+
+}
+.left{
+    width: 40%;
+}
+.right{
+    width: 60%;
+    flex-direction: column;
+    padding-left: 50px;
+}
+#stroka {
+    font-family: Playfair Display;
+    line-height: 1;
+    font-size: 45px;
+    margin-top: 40px;
+    /*text-align: center;*/
+   
+    font-style: italic;
+}
+.container4 {
+    width: 900px;
+    margin: 20px auto;
+}
+
+.post-container {
+    border: 1px solid #252627;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+
+.post-header {
+   /* display: flex;*/
+    font-family: Playfair Display;
+    font-weight: 900;
+    font-size: 60px;
+   /* align-items: center;*/
+    padding-left: 20px;
+    display: flex; /* Включаем flexbox для post-header */
+    justify-content: space-between; /* Выравниваем текст слева, кнопку справа */
+    align-items: center; /* Центрируем по вертикали (необязательно) */
+}
+
+.toggle-button {
+    border: none;
+    background: #252627;
+    padding: 5px;
+    color: #FAEEDE;
+    border-radius: 100px;
+    width: 70px;
+    font-size: 40px;
+    cursor: pointer;
+   /* margin-left: 430px;
+*/
+    display: flex; /* Добавляем flexbox для центрирования текста */
+    justify-content: center; /* Центрируем текст по горизонтали */
+    align-items: center; /* Центрируем текст по вертикали */
+}
+
+.hidden-text {
+    display: none;
+    font-family: Cormorant Garamond;
+    padding-left: 20px;
+    font-size: 25px;
+}
+#zagolov {
+    font-family: Playfair Display;
+    font-style: italic;
+    font-size: 65px;
+    text-align: center;
+    margin: 50px 0 40px 40px;
+}
+#paint2 {
+    text-align: left;
+    color: #252627;
+    font-family: Playfair Display;
+    font-style: italic;
+    font-size: 200px;
+    font-weight: 400;
+    margin-top: 40px;
+}
+#me {
+    font-family: Cormorant Garamond;
+    font-size: 35px;
+    font-weight: regular;
+    line-height: 165%;
+   /* margin-top: 10px;*/
+    
+}
+#stoka_me {
+    font-family: Playfair Display;
+    line-height: 1;
+    font-size: 48px;
+    /*margin-top: 10px;*/
+    text-indent: 80px;
+    /*text-align: center;*/
+
+    font-style: italic;
+}
+#ochem {
+    font-family: Cormorant Garamond;
+    font-size: 40px;
+    font-weight: regular;
+    line-height: 165%;
+   /* margin-top: 30px;*/
+}
+#photo_me {
+    width: 100%; /* Картинка занимает всю ширину контейнера */
+    height: auto; /* Высота подбирается автоматически */
+}
+.container5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.text-container {
+    width: 80%;
+    padding: 20px 50px 0 0; /* Добавляем отступ вокруг текста */
+    
+}
+.image-container {
+    width: 20%;
+    text-align: right; /* Выравниваем картинку по правому краю */
+}
+.container6 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-container {
+    width: 48%; /* Занимает 48% ширины, оставляя место для отступа */
+    margin-bottom: 20px;
+}
+
+    .image-container img {
+        width: 100%; /* Занимает всю ширину контейнера */
+        height: auto; /* Высота подбирается автоматически, сохраняя пропорции */
+        border-radius: 30px;
+        margin-top: 70px;
+    }
+.mobile-span {
+    font-size: 2em;
+}
+.text {
+    font-family: Cormorant Garamond;
+    
+    font-size: 35px;
+}
+.button2 {
+    background-color: #252627;
+    color: #FAEEDE;
+    border: 1px solid #252627;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-bottom: 100px;
+    margin-top: 150px;
+    width: 250px;
+    text-align: center; /* Выравнивание текста по центру по горизонтали */
+    line-height: 50px; /* Отрегулируйте высоту для вертикального центрирования */
+    padding: 10px 20px; /* Добавьте отступ, если необходимо */
+    font-family: Cormorant Garamond;
+    font-size: 35px;
+}
+
+@media (max-width: 768px) { /* Стиль для экранов с шириной меньше 768px (типичный смартфон) */
+    #tablet {
+        display: none;
+    }
+
+    #container {
+        height: 300px;
+        width: 400px;
+        position: relative;
+        display: inline-block;
+    }
+
+    #image {
+        height: 270px;
+        width: 400px;
+    }
+
+    #text {
+        z-index: 100;
+        position: absolute;
+        color: #252627;
+        font-family: Playfair Display;
+        font-size: 80px;
+        font-weight: 900;
+        left: 50px;
+        top: 60px;
+    }
+
+    #textt {
+        z-index: 0;
+        position: absolute;
+        color: #252627;
+        font-family: Playfair Display;
+        font-size: 80px;
+        font-style: italic;
+        left: 150px;
+        top: 120px;
+    }
+
+    #we {
+        font-family: Cormorant Garamond;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .custom-font {
+        font-family: Playfair Display;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    #hi {
+        font-family: Cormorant Garamond;
+        font-size: 30px;
+        font-weight: light;
+        line-height: 1;
+        margin-top: 50px
+    }
+
+    #paint {
+        z-index: 100;
+        position: absolute;
+        color: #252627;
+        font-family: Playfair Display;
+        font-size: 40px;
+        font-weight: 900;
+        left: 160px;
+        top: 460px;
+    }
+
+    #ii {
+        z-index: 100;
+        position: absolute;
+        color: #252627;
+        font-family: Playfair Display;
+        font-size: 15px;
+        font-weight: 600;
+        left: 160px;
+        top: 502px;
+    }
+
+    #writer {
+        z-index: 100;
+        position: absolute;
+        color: #252627;
+        font-family: Playfair Display;
+        font-style: italic;
+        font-size: 40px;
+        font-weight: 400;
+        left: 60px;
+        top: 500px;
+    }
+
+    #reason {
+        font-family: Cormorant Garamond;
+        font-size: 30px;
+        margin-top: 130px;
+        margin-bottom: 40px;
+    }
+
+    #imgg {
+        width: 40px;
+        height: 40px;
+    }
+
+    #plus {
+        font-family: Cormorant Garamond;
+        font-size: 15px;
+        line-height: 1;
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-right: 10px;
+        /*margin-bottom: 40px;*/
+    }
+
+    #writer2 {
+        color: #252627;
+        font-family: Playfair Display;
+        font-style: italic;
+        font-size: 40px;
+        font-weight: 400;
+        padding-right: 25px;
+        margin-bottom: 0px;
+    }
+
+    #kristinaa {
+        width: 150px;
+        height: auto;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    #stroka {
+        font-family: Playfair Display;
+        line-height: 1;
+        font-size: 13px;
+        margin-top: 25px;
+        padding-left: 10px;
+        /*text-align: center;*/
+        margin-bottom: 0;
+        font-style: italic;
+    }
+
+    .mobile-span {
+        font-size: 12px;
+    }
+
+    #kristinaa2 {
+        font-family: Cormorant Garamond;
+        font-size: 11px;
+        font-weight: regular;
+        margin-top: 0px;
+        line-height: 1;
+        padding-left: 10px;
+    }
+
+    #tab {
+        width: 50%;
+    }
+
+    #prim {
+        margin-top: 150px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .right {
+        width: 50%;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+
+    #zagolov {
+        font-family: Playfair Display;
+        font-style: italic;
+        font-size: 20px;
+        text-align: center;
+        margin: 50px 0 40px 40px;
+    }
+
+    .container4 {
+        width: 300px;
+        /* margin: 5px auto;*/
+    }
+
+    .post-container {
+        border: 1px solid #252627;
+        padding: 5px;
+        margin-bottom: 20px;
+        border-radius: 50px;
+    }
+
+    .post-header {
+        /* display: flex;*/
+        font-family: Playfair Display;
+        font-weight: 900;
+        font-size: 10px;
+        /* align-items: center;*/
+        padding-left: 20px;
+        display: flex; /* Включаем flexbox для post-header */
+        justify-content: space-between; /* Выравниваем текст слева, кнопку справа */
+        align-items: center; /* Центрируем по вертикали (необязательно) */
+    }
+
+    .toggle-button {
+        border: none;
+        background: #252627;
+        padding: 5px;
+        color: #FAEEDE;
+        border-radius: 100px;
+        width: 25px;
+        height: 25px;
+        font-size: 30px;
+        cursor: pointer;
+        /* margin-left: 430px;
+*/
+        display: flex; /* Добавляем flexbox для центрирования текста */
+        justify-content: center; /* Центрируем текст по горизонтали */
+        align-items: center; /* Центрируем текст по вертикали */
+    }
+
+    .hidden-text {
+        display: none;
+        font-family: Cormorant Garamond;
+        padding-left: 20px;
+        font-size: 15px;
+    }
+
+    .text {
+        padding-top: 5px;
+        font-family: Cormorant Garamond;
+        font-size: 15px;
+    }
+
+    #paint2 {
+        text-align: left;
+        color: #252627;
+        font-family: Playfair Display;
+        font-style: italic;
+        font-size: 40px;
+        font-weight: 400;
+        margin-top: 40px;
+    }
+
+    #me {
+        font-family: Cormorant Garamond;
+        font-size: 11px;
+        font-weight: regular;
+        margin-top: 0px;
+        line-height: 1;
+    }
+
+    #stoka_me {
+        font-family: Playfair Display;
+        line-height: 1;
+        font-size: 15px;
+        /*margin-top: 10px;*/
+        text-indent: 80px;
+        /*text-align: center;*/
+
+        font-style: italic;
+    }
+
+    #ochem {
+        font-family: Cormorant Garamond;
+        font-size: 11px;
+        font-weight: regular;
+        margin-top: 0px;
+        line-height: 1;
+    }
+
+    #photo_me {
+        width: 160px; /* Картинка занимает всю ширину контейнера */
+        height: auto; /* Высота подбирается автоматически */
+    }
+
+    .container5 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .text-container {
+        width: 80%;
+        padding: 20px 10px 0 0; /* Добавляем отступ вокруг текста */
+    }
+
+    .image-container {
+        width: 48%; /* Занимает 48% ширины, оставляя место для отступа */
+        margin-bottom: 10px;
+    }
+
+        .image-container img {
+            width: 100%; /* Занимает всю ширину контейнера */
+            height: auto; /* Высота подбирается автоматически, сохраняя пропорции */
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+    .button2 {
+        background-color: #252627;
+        color: #FAEEDE;
+        border: 1px solid #252627;
+        border-radius: 100px;
+        cursor: pointer;
+        margin-bottom: 100px;
+        margin-top: 50px;
+        width: 100px;
+        height: 30px;
+        text-align: center; /* Выравнивание текста по центру по горизонтали */
+        line-height: 5px; /* Отрегулируйте высоту для вертикального центрирования */
+        font-family: Cormorant Garamond;
+        font-size: 10px;
+    }
+    #tabl {
+        display: none;
+    }
+    #head{
+        display: none;
+    }
+}
+
+
+
+
+.container2 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+    list-style-type: none;
+}
+
+.product-card {
+    width: calc(30% - 20px);
+    margin: 10px;
+    padding: 20px;
+    background-color: #252627;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-card__name {
+    font-size: 25px;
+    color: #FAEEDE;
+    font-family: Playfair Display;
+    letter-spacing: 1px;
+    font-weight: bold;
+    align-content: center;
+}
+
+.product-card__description {
+    font-size: 18px;
+    align-content: center;
+    color: #FAEEDE;
+    opacity: 0.7;
+    letter-spacing: 1px;
+    font-family: Cormorant Garamond;
+    margin-top: 30px;
+    align-content: center;
+    align-items: center;
+}
+
+.product-card__price {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Playfair Display;
+    color: #FAEEDE;
+}
+
+.product-card__button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #FAEEDE;
+    color: #252627;
+    font-family: Playfair Display;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 70px;
+    text-decoration:none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-overlay {
+    position: fixed; /* Зафиксировать форму */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    display: flex;
+    justify-content: center;
+    font-family: Cormorant Garamond;
+    align-items: center;
+    z-index: 100; /* Установить z-index выше, чем у карточек */
+}
+
+.form-container {
+    background-color: #FAEEDE;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: Cormorant Garamond;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.auth-overlay {
+    position: fixed; /* Зафиксировать форму */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100; /* Установить z-index выше, чем у карточек */
+}
+
+.mainn {
+    background-color: #FAEEDE;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    transition: transform 0.2s;
+    width: 500px;
+    text-align: center;
+}
+
+.auth-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+    .product-card {
+        width: calc(50% - 20px);
+    }
+
+    .header {
+        width: calc(50% - 70px);
+        font-size: 12px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product-card {
+        width: 100%;
+    }
+
+    .header {
+        width: calc(50% - 20px);
+        font-size: 10px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+}
+
+

@@ -1,0 +1,38 @@
+﻿@page
+@model Origi.Pages.Index3Model
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Originator
+    </title>
+</head>
+<body style="background-color: #FAEEDE; display: flex;flex-wrap: wrap;justify-content: space-between;">
+  
+    <table width="100%" style="margin-top: 50px;">
+        <tr>
+            <td align="left" width="50%"> <a asp-page="Index2"><img src="~/images/Arrow-Left-Circle.png" style="margin-top: 50px;" /></a></td>
+        </tr>
+    </table>
+    <div class="mainn">
+        <h2>Войти как администратор</h2>
+        <h4>Введите логин и пароль</h4>
+        <form method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Admin.Login_Admin">Login:</label>
+                <input asp-for="Admin.Login_Admin" class="form-control" />
+                <span asp-validation-for="Admin.Login_Admin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Admin.Password">Password:</label>
+                <input asp-for="Admin.Password" type="password" class="form-control" />
+                <span asp-validation-for="Admin.Password" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
